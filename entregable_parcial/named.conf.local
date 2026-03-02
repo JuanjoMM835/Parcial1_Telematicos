@@ -1,0 +1,20 @@
+zone "empresa.local" {
+    type master;
+    file "/etc/bind/db.empresa.local";
+    allow-transfer { 192.168.56.11; };
+    notify yes;
+};
+
+zone "56.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192.168.56";
+    allow-transfer { 192.168.56.11; };
+    notify yes;
+};
+
+zone "parcial.juanjo.com" {
+    type master;
+    file "/etc/bind/db.parcial.juanjo.com";
+    allow-transfer { 192.168.56.11; };  
+    notify yes;
+};

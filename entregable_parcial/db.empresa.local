@@ -1,0 +1,16 @@
+$TTL 604800
+@   IN  SOA maestro.empresa.local. admin.empresa.local. (
+        2026030301
+        604800
+        86400
+        2419200
+        604800 )
+
+@       IN  NS      maestro.empresa.local.
+
+maestro        IN  A       192.168.56.10
+esclavo        IN  A       192.168.56.11
+www            IN  A       192.168.56.10
+
+hostv6         IN  AAAA    2001:db8::1
+alias          IN  CNAME   www.empresa.local.
